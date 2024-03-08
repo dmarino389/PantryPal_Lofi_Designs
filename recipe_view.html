@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Detail</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Patrick Hand', cursive;
+  }
+  .recipe-detail-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  .recipe-image img {
+  width: 100%; /* Makes the image fill the available width */
+  display: block; /* Removes any extra space below the image */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  
+}
+
+  .recipe-name {
+    font-size: 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ingredient-list {
+    list-style: none;
+    padding: 0;
+  }
+  .ingredient-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+  }
+  .ingredient-item:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+  .buttons-container {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+</style>
+</head>
+<body>
+
+<div class="recipe-detail-container">
+  <div class="recipe-name">
+    Name of Recipe
+    <span class="heart">❤</span>
+  </div>
+  <div class="recipe-image">
+    <img src="images/pasta.jpg" alt="Recipe Image">
+  </div>
+  <ul class="ingredient-list">
+    <!-- Repeat ingredient-item for each ingredient -->
+    <li class="ingredient-item">
+      <span>Food Item (Amount)</span>
+      <span>I have this</span>
+    </li>
+    <li class="ingredient-item">
+      <span>Food Item (Amount)</span>
+      <span>I have this</span>
+    </li>
+    <li class="ingredient-item">
+      <span>Food Item (Amount)</span>
+      <span>I have this</span>
+    </li>
+    <li class="ingredient-item">
+      <span>Food Item (Amount)</span>
+      <span>I have this</span>
+    </li>
+    <li class="ingredient-item">
+      <span>Food Item (Amount)</span>
+      <span>I have this</span>
+    </li>
+    <!-- ... -->
+  </ul>
+  <div class="buttons-container">
+    <a href="#" class="btn">View Full Instructions</a>
+    <a href="#" class="btn btn-secondary">Add Missing Ingredients to Shopping List</a>
+  </div>
+</div>
+
+</body>
+</html>

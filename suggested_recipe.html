@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suggested Recipes</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .recipes-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    padding-top: 0;
+  }
+  .search-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .filter {
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+  .recipe-card {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .recipe-card:last-child {
+    margin-bottom: 0;
+  }
+  .recipe-image {
+    height: 120px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .recipe-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .recipe-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .recipe-button {
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  .recipe-time {
+    font-size: 14px;
+    color: #6c757d;
+  }
+</style>
+</head>
+<body>
+
+<div class="recipes-container">
+  <div class="search-filters">
+    <button class="filter">Filter 1</button>
+    <button class="filter">Filter 2</button>
+    <button class="filter">Filter 3</button>
+  </div>
+  
+  <div class="recipe-card">
+    <div class="recipe-image"></div>
+    <div class="recipe-title">Recipe Name</div>
+    <div class="recipe-actions">
+      <button class="recipe-button">Can make this now</button>
+      <div class="recipe-time">(20 minutes)</div>
+    </div>
+  </div>
+
+  <div class="recipe-card">
+    <div class="recipe-image"></div>
+    <div class="recipe-title">Recipe Name</div>
+    <div class="recipe-actions">
+      <button class="recipe-button">Need 2 more ingredients</button>
+      <div class="recipe-time">(15 minutes)</div>
+    </div>
+  </div>
+  <div class="recipe-card">
+    <div class="recipe-image"></div>
+    <div class="recipe-title">Recipe Name</div>
+    <div class="recipe-actions">
+      <button class="recipe-button">Need 2 more ingredients</button>
+      <div class="recipe-time">(15 minutes)</div>
+    </div>
+  </div>
+  <div class="recipe-card">
+    <div class="recipe-image"></div>
+    <div class="recipe-title">Recipe Name</div>
+    <div class="recipe-actions">
+      <button class="recipe-button">Need 2 more ingredients</button>
+      <div class="recipe-time">(15 minutes)</div>
+    </div>
+  </div>
+  <div class="recipe-card">
+    <div class="recipe-image"></div>
+    <div class="recipe-title">Recipe Name</div>
+    <div class="recipe-actions">
+      <button class="recipe-button">Need 2 more ingredients</button>
+      <div class="recipe-time">(15 minutes)</div>
+    </div>
+  </div>
+
+  <!-- Add more recipe cards as needed -->
+  
+</div>
+
+</body>
+</html>
